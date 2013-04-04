@@ -5,8 +5,8 @@ Due to [overhead of type assertion](https://groups.google.com/d/msg/golang-nuts/
 
 To run the test,
 ```
-$ git clone git://github.com/songgao/bufferManager.go.git
-$ cd bufferManager.go
+$ git clone git://github.com/songgao/bufferManager.go.git bufferManager
+$ cd bufferManager
 $ chmod +x run_test.sh
 $ ./run_test.sh
 ```
