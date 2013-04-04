@@ -1,0 +1,24 @@
+#!/bin/bash
+
+go build
+
+echo
+echo "==========================="
+echo "Running the test......"
+echo
+./test_buffered
+echo "==========================="
+echo
+echo
+echo "==========================="
+echo "pprof - with bufferManager:"
+echo
+go tool pprof --text ./test_buffered ./with_bufferManager.prof
+echo "==========================="
+echo
+echo
+echo "==========================="
+echo "pprof - without bufferManager:"
+echo
+go tool pprof --text ./test_buffered ./without_bufferManager.prof
+echo "==========================="
