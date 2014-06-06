@@ -1,3 +1,7 @@
+# Update
+
+Consider using `sync.Pool` introduced in Go 1.3 (http://tip.golang.org/pkg/sync/#Pool). It implements a freelist using `interface{}` and uses a similar technique to relieve pressure on GC. 
+
 # bufferManager.go
 `bufferManager` demonstrates a technique to decrease pressure on GC in Go.
 
